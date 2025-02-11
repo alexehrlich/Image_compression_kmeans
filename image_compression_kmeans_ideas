@@ -1,0 +1,17 @@
+Image compression
+
+Idea:
+	- Pixel is represented by a [r, g, b] vector, where each value can be 0..255.
+	- Each Pixel therefore needs 3 * 8 = 24 Bit
+	- There are 2^24 (256 * 256 * 256) possible colors: 16777216
+
+Goal:
+	- Reduce possible colors and therefore the amount of information to safe
+	- Create e.g 16  Clusters of all the colors appearing in the picture
+	- 16 colors can be represented by only 4 bit (safed 20 Bits per pixel)
+
+How:
+	- Use KMeans Clustering to find 16 clusters of rgb colors
+	- use the model to pass each pixel [r, g, b] to get a 4 bit value representing a color
+
+
