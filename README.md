@@ -3,4 +3,4 @@ This little project is about kmeans from scratch to use it for image compression
 
 ## Result
 `img_compr.py` compares the kmeans from sklearn and mine written from scratch. It clusters the image colors into 16 clusters.
-![result]("./img/result.png")
+![result](img/result.png)
